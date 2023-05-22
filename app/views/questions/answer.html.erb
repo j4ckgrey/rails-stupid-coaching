@@ -1,0 +1,12 @@
+<div class="mx-auto mt-5" style="width: 90rem;">
+  <h1>Stupid Coaching</h1>
+  <div class="card-body border-start border-5 rounded">
+    <%= @question %>
+    <p class="fst-italic">--you</p>
+  </div>
+  <div class="alert alert-warning card mt-4 border-start border-5 rounded" role="alert">
+    <p class="fw-bold"><%= @answer %></p>
+    <p class="fst-italic">--Your coach</p>
+  </div>
+  <%= link_to "Ask a new question", ask_path, class: "text-decoration-none" %>
+</div>
